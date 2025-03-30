@@ -71,7 +71,7 @@ void free_list(struct linked_list list)
    struct list_node * cur = list.head;
    while (cur != NULL)
    {
-      struct list_node * toDelete;
+      struct list_node * toDelete = cur;
       cur = cur -> next;
       free(toDelete);
    }

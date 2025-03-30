@@ -76,6 +76,8 @@ int number_of_moves(struct game_state start)
       {
          //printf("finihed!\n");
          //free_list(visited);
+         free_list(visited);
+         free_list(q.data);
          return (curState.num_steps);
       }
        
@@ -157,6 +159,7 @@ int number_of_moves(struct game_state start)
       
       
    }
+   free_list(visited);
               
 }
 
