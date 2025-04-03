@@ -75,6 +75,7 @@ void free_list(struct linked_list list)
       cur = cur -> next;
       free(toDelete);
    }
+   free(cur);
 }
 /*
 void print_list(struct linked_list list)
